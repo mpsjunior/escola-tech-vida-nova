@@ -9,5 +9,5 @@ while cont <= n:
     cont1 = cont2 
     cont2 = cont3
     cont += 1
-    print(" fim")
+print("fim")
     
