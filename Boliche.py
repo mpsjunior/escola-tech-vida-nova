@@ -21,12 +21,17 @@ def imprimeBoliche(pinosDerrubados):
 
 pinos_derrubados = []
 
-while(True):
+# Em Python a gente costuma só usar o parênteses pra evitar ambiguidade.
+# Como o seu caso é um while True, pode deixar assim
+while True:
     entrada = int(input("Digite o pino derrubado ou 0 para sair:"))
     
     if (entrada == 0):
         print("Adeus!")
-        exit()
+        exit() 
+        # Note que a única possível saída do seu código é quando o usuário digita 0.
+        # Uma sugestão seria encerrar o jogo também quando o usuário derrubasse todos os pinos. 
+        # Nesse caso talvez poderia haver uma mensagem diferente. Fica apenas a sugestão ;)
     
     if(entrada in pinos_derrubados):
         print("Esse pino já foi derrubado!")
